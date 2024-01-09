@@ -25,11 +25,16 @@
       align-items: center;
       justify-content: space-around;
       padding: 0 5.438em;
+      margin: 10em auto 0 auto;
     }
     @mixin smallScreensMaxWidth565{
       justify-content: space-evenly;
       padding: 1.8em 3.438em 6em 3.438em;
       min-height: 94vh;
+      margin: 0 auto;
+    }
+    @mixin mediumScreensLandscape_MinW_768_MaxW_1100{
+      margin: 35em auto 30em auto;
     }
     &--inner{
       display:flex;
@@ -72,11 +77,17 @@
       font-family: 'Bellefair';
       font-size: 3.2rem;
       cursor: pointer;
+      
+      position: absolute;
+      top: 12%;
+      border-radius: 100%;
+      background: white;
+      padding: 4em 2.25em;
       @mixin smallScreensMaxWidth565{
-        top:23%;
-        right:22.5%;
-        width:124px;
-        height:124px;
+        top:3%;
+        right:8%;
+        width:10em;
+        height:10em;
         font-size: 2rem;
       }
       &--hover{
@@ -88,13 +99,17 @@
         border-radius:200px;
         font-family: 'Bellefair';
         font-size: 3.2rem;
-        top: 1.5em;
+        top: 0em;
         position: relative;
         left: .4em;
         @mixin smallScreensMaxWidth565{
           width:224px;
           height:224px;
           font-size: 2rem;
+        }
+        @mixin smallScreensPortraitMinWidth565{
+          left:-.25em;
+          top: -.25em;
         }
       }
     }

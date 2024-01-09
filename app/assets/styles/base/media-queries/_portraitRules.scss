@@ -8,3 +8,9 @@
     @mixin-content;
   }
 }
+
+@define-mixin smallScreensPortraitMinWidth565{
+  @media screen and (orientation: portrait) and  (max-width: 565px){
+    @mixin-content;
+  }
+}
