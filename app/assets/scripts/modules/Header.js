@@ -13,8 +13,9 @@ const Header = ({ active }) => {
       <div className='header__container-outer'>
         <div className='header__container-inner'>
           <section className='header__section-left'>
-            <img className='header__image' src="assets/images/shared/logo.svg" alt="logo" />
-            
+            <a href="index.html">
+              <img className='header__image' src="assets/images/shared/logo.svg" alt="logo" />
+            </a>
           </section>
           <section className='header__section-right'>
             <svg version="1.1" className="header__divider-line" x="0px" y="0px"  >
