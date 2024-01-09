@@ -16,8 +16,7 @@
         height:auto;
       }
       @mixin largeScreensLandscapeMinWidth1366MaxHeight1024{
-        min-height: 85svh;
-        min-height: 85dvh;
+        min-height: 85vh;
         height:auto;
       }
       @mixin mediumScreensMaxWidth768{
@@ -41,9 +40,10 @@
       @mixin largeScreensMaxWidth1240{
         overflow: hidden;
       }
-      @mixin mediumScreensMaxWidth768{
+      @mixin largeScreensMaxWidth1186{
         padding: 0 3.5em 0 3.5em;
       }
+      
       @mixin smallScreensMaxWidth565{
         
         overflow-y:'visible';
@@ -67,6 +67,9 @@
       }
       @mixin mediumScreensMaxWidth768{
         justify-content: center;
+      }
+      @mixin smallScreensMaxWidth375{
+        height: 82.5vh;
       }
     }
     &--content{
@@ -140,7 +143,7 @@
         }
       }
       &-number{
-        font-family: 'Barlow Condensed';
+        font-family: 'Barlow Bold';
         letter-spacing: 4.725px;
         font-size: 2.8rem;
         opacity:.25;

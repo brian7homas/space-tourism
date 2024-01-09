@@ -31,7 +31,7 @@
     @mixin smallScreensMaxWidth565{
       justify-content: flex-start;
       padding: 0 3em;
-      min-height: auto;
+      min-height: 90vh;
       align-items: center;
     }
     }
@@ -302,6 +302,7 @@
       align-items: center;
       justify-content: flex-start;
       flex-direction: row-reverse;
+      min-height:75vh;
       @mixin largeScreensMaxWidth1186{
         padding: 0 3em 0 3em;
       }
