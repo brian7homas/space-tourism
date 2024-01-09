@@ -54,7 +54,6 @@ barba.init({
           tl.play()
         })
         document.querySelector('.page__home-main-cta').addEventListener('mouseleave', ()=>{
-          console.log('pause')
           tl.pause()
           tl.reverse()
         })

@@ -81,13 +81,13 @@ class ContentSwitch{
   }
   destinationMenuAnimation(destination){
     if(destination > this.currentDestination){
-      return gsap.fromTo(`.page__${this.page}--marker`, {ease:'power2.out',width: '0%'},{ease:'power2.out',cssFloat:'left',width: '100%'})
+      return gsap.fromTo(`.page__${this.page}--marker`, {ease:'sine.out', scaleX: '0%'},{ease:'sine.out',transformOrigin:'left', scaleX: '100%'})
     }else if(destination < this.currentDestination){
-      return gsap.fromTo(`.page__${this.page}--marker`, {ease:'power2.out',width: '0%'},{ease:'power2.out',cssFloat: 'right', width: '100%'})
+      return gsap.fromTo(`.page__${this.page}--marker`, {ease:'sine.out', scaleX: '0%'},{ease:'sine.out',transformOrigin: 'right', scaleX: '100%'})
     }
   }
   contentAnimation(){
-    return gsap.from(this.elementsToAnimate, {autoAlpha:0,ease: 'power2.inOut', stagger:.009,opacity:0})
+    return gsap.from(this.elementsToAnimate, {duration: .16, autoAlpha:0,ease: 'sine.inOut', stagger:.009,opacity:0})
   }
 
   setCurrentDestination(destination){
