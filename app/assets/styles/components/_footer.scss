@@ -5,10 +5,11 @@
   z-index: 3;
 }
 .footer{
-  margin: -2em 2.438em 0 2.438em;
+  margin-top: 8em;
+  margin-right: 4em;
   font-size: 1.3rem;
   @mixin mediumScreensMaxWidth890{
-    margin: -2em 6.438em 0 2.438em;
+    margin: 1em 3.438em 0 2.438em;
   }
   @mixin smallScreensMaxWidth565{
     margin: -2em 2.438em 0 2.438em;
