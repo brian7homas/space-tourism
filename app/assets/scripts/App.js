@@ -45,15 +45,16 @@ barba.init({
         ReactDOM.render(<ExploreBtn />, document.querySelector('.page__home-container--button'))
         new MobileMenu()
         new ActiveNav().enter(data.current.namespace, data.next.namespace)
+        const exploreButton = document.querySelector('.page__home-main-cta')
         const tl = gsap.timeline({paused:true})
           tl.to('.page__home-main-cta--hover', .5,{
             ease: 'linear', 
             opacity:.50,
             })
-        document.querySelector('.page__home-main-cta').addEventListener('mouseenter', ()=>{
+        exploreButton.addEventListener('mouseenter', ()=>{
           tl.play()
         })
-        document.querySelector('.page__home-main-cta').addEventListener('mouseleave', ()=>{
+        exploreButton.addEventListener('mouseleave', ()=>{
           tl.pause()
           tl.reverse()
         })
