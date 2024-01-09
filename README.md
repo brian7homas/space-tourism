@@ -11,10 +11,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 #### The challenge
@@ -27,15 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
-
+![](./readmeFiles/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/space-tourism-4xwx3G7bWi)
+- Live Site URL: [Add live site URL here](https://659dd3e696fa9f611c7aaed4--zesty-conkies-307358.netlify.app)
 
 ## My process
 
@@ -44,7 +39,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [GSAP](https://gsap.com) - JS library - Animations
 - [Barba JS](https://barba.js.org) - React framework) - Page transistions 
@@ -52,41 +46,16 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-I was able to find that I needed to brush up on how to keep footer content stuck to the bottom of the page without having to define heights at different viewports/devices. 
-
-(place code that fixes this here)
-
-After finding the MDN docs direction on how to acheive the desired footer behavior. I was able to get the footer to stick to the bottom of the page with minimal css compensations.
-
 I could spend days adjusting the Barba/GSAP integration. Making the pages smoothly transition was not to difficult when testing on Firefox/Chrome browsers. But on Safari the page indicator appeared to not complete the animation. 
 
-(place example gif here)
+![](./readmeFiles/transition-error.gif)
 
-I was able to mitigate the animation by changing/adding these lines in the projects HTML, CSS an JS files.
+I was able to mitigate the animation by swapping the ```width``` value in the gsap animations to use ```scaleX``` instead.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+ActiveNav.js - line 7
+gsap.fromTo(this.marker, {autoAlpha: 0, visibility:'visible', opacity: 0, scaleX:'0%'}, {ease:'sine.out', autoAlpha: 1, transformOrigin: 'left', visibility:'visible', opacity: 1, scaleX:'100%'})
 ```
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-In the future I'd like to add Three JS to each of the planets.
-
 
 ### Useful resources
 
@@ -97,6 +66,5 @@ In the future I'd like to add Three JS to each of the planets.
 
 ## Author
 
-- Website - [Brian Thomas](https://www.your-site.com)
-- Frontend Mentor - [@joyreacher](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Brian Thomas](https://brianthomas-develops.com)
+- Frontend Mentor - [@joyreacher](https://www.frontendmentor.io/profile/joyreacher)
