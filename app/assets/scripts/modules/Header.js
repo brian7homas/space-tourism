@@ -25,7 +25,7 @@ const Header = ({ active }) => {
               <ul className='header__nav-inner'>
                 <li className='header__nav-item'>
                   <span className='header__nav-item-order'>00</span> 
-                  <a href="index.html" className='header__nav-item-text'>HOME</a>
+                  <a href='index.html' className='header__nav-item-text'>HOME</a>
                   <span className={`${active === 'home' ? 'header__nav-item-marker--active' : ''} header__nav-item-marker`}></span>
                 </li>
                 <li className='header__nav-item'>
