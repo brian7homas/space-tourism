@@ -3,7 +3,9 @@ import React from 'react'
 function ExploreBtn(){
   return (
     <>
-      <button className='page__home-main-cta'>EXPLORE</button>
+        <a href='destination.html' className='page__home-main-cta'>
+          EXPLORE
+        </a>
       <div className='page__home-main-cta--hover'></div>
     </>
   )

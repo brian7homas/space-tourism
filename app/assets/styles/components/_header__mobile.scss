@@ -11,7 +11,7 @@
     backdrop-filter: blur(0rem);
     background-color: hsla(0, 0%, 59%, 9%);
     padding: 12.5em 3.5em;
-    z-index: 1;
+    z-index: 4;
     display:none;
     overflow:hidden;
     @mixin smallScreensMaxWidth565{
@@ -69,7 +69,7 @@
       justify-content: space-around;
       align-items: flex-end;
       position: relative;
-      z-index: 2;
+      z-index: 5;
       margin: 0 3.438em 0 0;
       @mixin smallScreensMaxWidth565{
         display:flex;

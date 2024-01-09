@@ -13,8 +13,9 @@ const Header = ({ active }) => {
       <div className='header__container-outer'>
         <div className='header__container-inner'>
           <section className='header__section-left'>
-            <img className='header__image' src="assets/images/shared/logo.svg" alt="logo" />
-            
+            <a href="index.html">
+              <img className='header__image' src="assets/images/shared/logo.svg" alt="logo" />
+            </a>
           </section>
           <section className='header__section-right'>
             <svg version="1.1" className="header__divider-line" x="0px" y="0px"  >
@@ -25,7 +26,7 @@ const Header = ({ active }) => {
               <ul className='header__nav-inner'>
                 <li className='header__nav-item'>
                   <span className='header__nav-item-order'>00</span> 
-                  <a href="index.html" className='header__nav-item-text'>HOME</a>
+                  <a href='index.html' className='header__nav-item-text'>HOME</a>
                   <span className={`${active === 'home' ? 'header__nav-item-marker--active' : ''} header__nav-item-marker`}></span>
                 </li>
                 <li className='header__nav-item'>
